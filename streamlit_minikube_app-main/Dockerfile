@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY main.py .
 
-CMD ["streamlit", "run", "main.py"]
+CMD ["streamlit", "run", "main.py", "--address.service=0.0.0.0"]
