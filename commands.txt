@@ -1,0 +1,25 @@
+# התקנת סביבה ותלויות
+$ py -m venv .venv
+$ source ./.venv/Scripts/activate
+$ pip install -r requirements.txt
+$ pip freeze > requirements.txt
+$ git checkout -b Dockerfile_Branch
+
+# פקודות בראנץ Dockerfile_Branch בCLI:
+$ git checkout -b Dockerfile_Branch
+$ cd ./streamlit_minikube_app-main/
+$ docker build -t israelyarbloom/streamlit-app:v1 .$ docker image ls
+$ docker run -d --name strim-app-container -p 8501:8501 <image-ID>
+$ docker ps
+$ docker stop <container-ID>
+$ docker rm <container-ID>
+$ docker push israelyarbloom/streamlit-app:v1
+$ git push origin Dockerfile_Branch
+$ git checkout main
+
+# פקודות בראנץ Kubernetes_Pod בCLI:
+$ cd ..
+$ git checkout -b Kubernetes_Pod
+
+$ minikube start
+$ kubectl apply -f pod.yaml
