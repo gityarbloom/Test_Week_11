@@ -23,3 +23,8 @@ $ git checkout -b Kubernetes_Pod
 
 $ minikube start
 $ kubectl apply -f pod.yaml
+
+# פקודות בראנץ service בCLI:
+$ cd ..
+$ git checkout -b service
+$ kubectl apply -f service.yaml
